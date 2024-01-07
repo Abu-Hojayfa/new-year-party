@@ -7,7 +7,6 @@
 /* Common styles */
 .default-container {
   width: 1320px;
-  height: 600px;
   margin: 50px 140px;
   border-radius: 15px;
 }
@@ -19,12 +18,34 @@ p {
   font-weight: 400;
 }
 
-h2{
-  color: #FFF;
-text-align: center;
-font-size: 72px;
-font-weight: 900;
-line-height: 95px;
+h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 72px;
+  font-weight: 900;
+  line-height: 95px;
+}
+
+.btn-primary {
+  border: 1px solid #f00;
+  border-radius: 8px;
+  background: #f00;
+  height: 60px;
+  width: 170px;
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 50px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.btn-primary:hover{
+  background-color: #070211;
+  cursor: pointer;
+  color: #f00;
 }
 
 /* header section */
@@ -34,13 +55,80 @@ line-height: 95px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 600px;
 }
-.header-content{
+.header-content {
   max-width: 632px;
   max-height: 190px;
   padding: 177px 344px;
 }
 
-.header-content p{
+.header-content p {
   margin-bottom: 20px;
+}
+
+/* discount-section */
+.discount-section {
+  max-width: 50%;
+  margin: 50px auto;
+}
+.discount-section img {
+  width: 800px;
+  height: 500px;
+}
+
+.discount-section h2 {
+  color: #f00;
+  font-size: 70px;
+}
+.discount-section p {
+  color: #f00;
+  font-size: 20px;
+  margin-top: 40px;
+}
+
+.discount-section h3 {
+  color: #070211;
+  text-align: center;
+  font-size: 40px;
+  margin-top: 10px;
+  margin-bottom: 48px;
+}
+
+/* welcome-section */
+.welcome-section {
+  background-image: linear-gradient(90deg, #070211 0%, rgba(7, 2, 17, 0) 100%),
+    url("./images/Vectorrr.png");
+  height: 600px;
+}
+
+.welcome-section-content {
+  padding: 70px 140px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.welcome-section-content img {
+  width: 320px;
+  height: 465px;
+}
+.welcome-section-content-info {
+  max-width: 695px;
+  margin-right: 50px;
+}
+.welcome-section-content-info h2 {
+  font-size: 60px;
+  line-height: 80px;
+  letter-spacing: 7.04px;
+  text-align: left;
+}
+
+.welcome-section-content-info p {
+  color: rgba(255, 255, 255, 0.8);
+  text-align: left;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  padding-top: 20px;
 }
