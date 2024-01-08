@@ -101,6 +101,7 @@ h2 {
   background-image: linear-gradient(90deg, #070211 0%, rgba(7, 2, 17, 0) 100%),
     url("./images/Vectorrr.png");
   height: 600px;
+  background-size: cover;
 }
 
 .welcome-section-content {
@@ -182,7 +183,8 @@ h2 {
   font-weight: 500;
 }
 .offer-dis h2,
-.portfolio-dis h2 {
+.portfolio-dis h2,
+.newsletter h2 {
   color: #070211;
   font-size: 48px;
   font-weight: 800;
@@ -193,7 +195,8 @@ h2 {
 
 .offer-dis p:nth-child(3),
 .year-dis p,
-.portfolio-dis p:nth-child(3) {
+.portfolio-dis p:nth-child(3),
+.newsletter p {
   color: rgba(7, 2, 17, 0.6);
   font-family: Inter;
   font-size: 18px;
@@ -237,7 +240,8 @@ h2 {
   cursor: pointer;
   overflow: hidden;
   max-height: 450px;
-  transition: box-shadow 0.3s ease-in-out, max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out, max-height 0.3s ease-in-out,
+    opacity 0.3s ease-in-out;
 }
 
 .portfolio-components:hover .component-dis {
@@ -267,11 +271,45 @@ h2 {
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
-
 .price {
   font-size: 30px;
 }
 
 .component-dis button {
   margin: 0;
+}
+
+/* newsletter */
+.newsletter {
+  margin-top: 100px;
+  background: rgba(255, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 620px;
+}
+
+.newsletter h2 {
+  text-align: center;
+}
+
+.newsletter p {
+  width: 896px;
+  text-align: center;
+}
+
+.subscribe input {
+  width: 440px;
+  height: 30px;
+  padding: 11px;
+  font-size: 20px;
+  border-radius: 50px 0 0 50px;
+  border: 1px solid #f00;
+}
+
+.subscribe button{
+  transform: translateX(-5px);
+  max-height: 55px;
+  border-radius: 0 50px 50px 0;
 }
